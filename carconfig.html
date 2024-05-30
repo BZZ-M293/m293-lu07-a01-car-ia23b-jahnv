@@ -1,14 +1,59 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>Fahrzeug-Konfigurator</title>
+<html lang='de'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Fahrzeug-Konfigurator</title>
 
-</head>
-<body>
+  </head>
+  <body>
 
-<h1>Fahrzeug-Konfigurator</h1>
+    <h1>Fahrzeug-Konfigurator</h1>
+    <form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+      <fieldset>
+        <label>Fahrzeugmodell:
+          <select name='vehicle' size='15'>
+            <option>BMW 3er</option>
+            <option>Mercedes-Benz C-Klasse</option>
+            <option>Audi A4</option>
+            <option>Volkswagen Golf</option>
+            <option>Toyota Corolla</option>
+            <option>Honda Civic</option>
+            <option>Ford Focus</option>
+            <option>Nissan Qashqai</option>
+            <option>Renault Clio</option>
+            <option>Peugeot 208</option>
+            <option>Skoda Octavia</option>
+            <option>Hyundai i30</option>
+            <option>Kia Sportage</option>
+            <option>Tesla Model 3 performance</option>
+            <option>Volvo XC60</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Lackfarbe:
+          <input type='radio' id='sh' name='paintColor' value='Schwarz'>
+          <label for='sh'> Schwarz</label>
 
+          <input type='radio' id='ws' name='paintColor' value='Weiß'>
+          <label for='ws'> Weiß</label>
 
-</body>
+          <input type='radio' id='sl' name='paintColor' value='Silber'>
+          <label for='sl'> Silber</label>
+
+          <input type='radio' id='gr' name='paintColor' value='Grau'>
+          <label for='gr'> Grau</label>
+
+          <input type='radio' id='bl' name='paintColor' value='Blau'>
+          <label for='bl'> Blau</label>
+
+          <input type='radio' id='rt' name='paintColor' value='Rot'>
+          <label for='rt'> Rot</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type='submit' value='Submit'>
+      </fieldset>
+    </form>
+  </body>
 </html>
